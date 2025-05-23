@@ -1,0 +1,56 @@
+@page "/content"
+<link rel="stylesheet" href="ContentPage.css" />
+
+
+<PageTitle>Conteúdo @Titulos[0]</PageTitle>
+<div class="imagem">
+    <img src="@Imagens[0]" alt="">
+</div>
+
+<h1 role="status">@Titulos[0]</h1>
+<div>
+    <div>
+        <p>@Texto[0]</p>
+    </div>
+</div>
+@*1. Para páginas Razor tradicionais (.cshtml): use `@functions`
+2. Para componentes Blazor (.razor): use `@code`  Usar dicionario para linkar os valores de cada salmo? *@
+
+@functions
+{
+    private static String Titulo { get; set; } = "";
+    private static String[] Titulos = { "Salmo 16","Salmo 91" };
+    private static String[] Texto = { $@"
+                                           ¹ Guarda-me, ó Deus, porque em ti me refugio.
+                                           ² Digo ao Senhor:  ""Tu és o meu Senhor;  outro bem não possuo, senão a ti somente.""
+                                           ³ Quanto aos santos  que há na terra, eles são os notáveis nos quais tenho todo o meu prazer. 
+                                           ⁴ Muitas serão as dores  dos que trocam o Senhor por outros deuses; não oferecerei as suas libações de sangue, e os meus lábios não pronunciarão os nomes deles. 
+                                           ⁵ O Senhor é a porção da minha herança e o meu cálice; tu sustentas a minha sorte. 
+                                           ⁶ As minhas divisas caíram em lugares agradáveis; é linda a minha herança. 
+                                           ⁷ Bendigo o Senhor, que me aconselha; pois até durante a noite o meu coração me ensina. 
+                                           ⁸ Tenho o Senhor sempre diante de mim; estando ele à minha direita, não serei abalado. 
+                                           ⁹ Por isso o meu coração se alegra e o meu espírito exulta; até o meu corpo repousará seguro. 
+                                           ¹⁰ Pois não deixarás a minha alma na morte, nem permitirás que o teu Santo veja corrupção. 
+                                           ¹¹ Tu me farás ver os caminhos da vida; na tua presença há plenitude de alegria, à tua direita, há delícias perpetuamente.
+                                       "
+        
+        ,
+        $"¹ Aquele que habita no esconderijo do Altíssimo e descansa à sombra do Onipotente " +
+        $"² diz ao Senhor: \"Tu és o meu refúgio e a minha fortaleza,  o meu Deus, em quem confio.\" " +
+        $"³ Pois ele livrará você do laço do passarinheiro e da peste perniciosa. " +
+        $"⁴ Ele o cobrirá com as suas penas, e, sob as suas asas, você estará seguro; a sua verdade é proteção e escudo. " +
+        $"⁵ Você não terá medo do terror noturno, nem da flecha que voa de dia, " +
+        $"⁶ nem da peste que se propaga nas trevas,  nem da mortandade que assola ao meio-dia. " +
+        $"⁷ Caiam mil ao seu lado, e dez mil, à sua direita; você não será atingido. " +
+        $"⁸ Somente com os seus olhos você contemplará e verá o castigo dos ímpios. " +
+        $"⁹ Você disse: \"O Senhor é o meu refúgio.\" Você fez do Altíssimo a sua morada. " + 
+        $"¹⁰ Nenhum mal lhe sucederá, praga nenhuma chegará à sua tenda. " +
+        $"¹¹ Porque aos seus anjos ele dará ordens a seu respeito, para que guardem você em todos os seus caminhos. " +
+        $"¹² Eles o sustentarão nas suas mãos, para que você não tropece em alguma pedra. " +
+        $"¹³ Você pisará o leão e a cobra; com os pés esmagará o leãozinho e a serpente. " +
+        $"¹⁴ Deus diz: \"Porque a mim se apegou com amor, eu o livrarei; eu o protegerei, porque conhece o meu nome. " +
+        $"¹⁵ Ele me invocará, e eu lhe responderei; na sua angústia eu estarei com ele; eu o livrarei e o glorificarei. " +
+        $"¹⁶ Vou saciá-lo com longevidade e lhe mostrarei a minha salvação.\" ","","","" };
+    private static String[] Imagens = { "https://images.pexels.com/photos/12232534/pexels-photo-12232534.jpeg","https://images.pexels.com/photos/1659437/pexels-photo-1659437.jpeg" };
+    
+}
