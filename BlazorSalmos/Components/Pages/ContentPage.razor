@@ -1,25 +1,29 @@
 @page "/content"
 <link rel="stylesheet" href="ContentPage.css" />
 
+<CascadingFilho/>
 
-<PageTitle>Conteúdo @Titulos[0]</PageTitle>
+<ContentPage Titulos="@Titulos"></ContentPage>
+
+
+@*
+<PageTitle>Conteúdo @Titulos</PageTitle>
 <div class="imagem">
-    <img src="@Imagens[0]" alt="">
+    <img src="@Imagens" alt="">
 </div>
 
-<h1 role="status">@Titulos[0]</h1>
+<h1 role="status">@Titulos</h1>
 <div>
-    <div>
-        <p>@Texto[0]</p>
-    </div>
+   
 </div>
 @*1. Para páginas Razor tradicionais (.cshtml): use `@functions`
 2. Para componentes Blazor (.razor): use `@code`  Usar dicionario para linkar os valores de cada salmo? *@
 
 @functions
 {
-    private static String Titulo { get; set; } = "";
-    private static String[] Titulos = { "Salmo 16","Salmo 91" };
+    [Parameter] public String Titulo { get; set; } = "";
+    [Parameter] public  String[] Titulos { get; set; }={"","","","","",""};
+    //Titulos = { "Salmo 16","Salmo 91" };
     private static String[] Texto = { $@"
                                            ¹ Guarda-me, ó Deus, porque em ti me refugio.
                                            ² Digo ao Senhor:  ""Tu és o meu Senhor;  outro bem não possuo, senão a ti somente.""
