@@ -1,0 +1,23 @@
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140pt;
+    height: 260pt;
+    background:  linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+    border: double 4px #fff;
+
+}
+.card:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
+    cursor: pointer;
+}
+.card img{
+    width: 100%;
+    object-fit: cover;
+}
+
+h3{
+    color: white;
+}

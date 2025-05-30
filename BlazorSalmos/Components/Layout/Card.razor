@@ -1,0 +1,29 @@
+@using BlazorSalmos.Components.Pages
+<a href="@linkCard">
+    <div class="card">
+        <img src="@ImagemSalmos" alt="">
+        <h3>@NomeSalmos</h3>
+    </div>
+</a>
+
+
+@code {
+    string ImagemSalmos = "";
+    string NomeSalmos = "";
+    string linkCard = "";
+    [Parameter] public int quantidadeCards { get; set; }
+    
+
+
+}
+
+@*
+<ContentPage Items="@myArray" />
+
+@code {
+    private string[] myArray = { "Item 1", "Item 2", "Item 3" };
+}
+
+
+*@
+
