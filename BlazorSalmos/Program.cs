@@ -24,5 +24,6 @@ app.UseAntiforgery();
 app.MapStaticAssets();
 app.MapRazorComponents<App>()
     .AddInteractiveServerRenderMode();
+    //.MapRazorPages(); pq não func?
 
 app.Run();
