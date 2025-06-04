@@ -1,11 +1,23 @@
-@page "/content"
-<link rel="stylesheet" href="ContentPage.css" />
+@page "/contentpage"
 
-<CascadingFilho/>
-
-<ContentPage Titulos="@Titulos"></ContentPage>
+@using static BlazorSalmos.Components.Pages.ContentPage
 
 
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link rel="stylesheet" href="ContentPage.css" />
+    <title>Cascading Example</title>
+</head>
+<body>
+<div>
+    <CascadingFilho/>
+
+    <ContentPage Titulos="@Titulos"></ContentPage>
+</div>
+</body>
+</html>
 @*
 <PageTitle>Conteúdo @Titulos</PageTitle>
 <div class="imagem">

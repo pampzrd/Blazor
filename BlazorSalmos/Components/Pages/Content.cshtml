@@ -1,39 +1,43 @@
-@*@page "/Content"
-
-@model BlazorSalmos.Components.Pages.Content
-
-@{
-    Layout = null;
-}
+@page
+@using BlazorSalmos.Components.Layout
+@model BlazorSalmos.Components.Pages.ContentPage
+@* https://bible-api.com/data/almeida/JHN/3 *@
 
 <!DOCTYPE html>
 
 <html>
 <head>
-    <title>@Titulos[0]</title>
+    <title>Content Page</title>
 </head>
 <body>
-<PageTitle>Conteúdo @Titulos[0]</PageTitle>
 <div>
-    <img src="@Imagens[0]" alt="">
-</div>
+    <p>Teste</p>
+    <div>
+        <img src="#" alt="IMAGEM">
+    </div>
 
-<h1 role="status">@Titulos[0]</h1>
-<div>
-    <article>
-        <p>@Texto[0]</p>
-    </article>
+    <h1>TITULO</h1>
+    <div>
+        <article>
+            <p>TEXTLIMA</p>
+        </article>
+    </div>
 </div>
-$1$1. Para páginas Razor tradicionais (.cshtml): use `@functions`
-2. Para componentes Blazor (.razor): use `@code`#1#
+</body>
+</html>
+
+
+@*$2$1. Para páginas Razor tradicionais (.cshtml): use `@functions`
+2. Para componentes Blazor (.razor): use `@code`#2#*@
 
 @functions
 {
+    /*
     private static String Titulo { get; set; } = "";
     private static String[] Titulos = { "Salmo 16" };
     private static String[] Texto = { "¹ Guarda-me, ó Deus,\n  porque em ti me refugio.\n² Digo ao Senhor:\n  \"Tu és o meu Senhor;\n  outro bem não possuo,\n  senão a ti somente.\"\n³ Quanto aos santos\n  que há na terra,\n  eles são os notáveis\n  nos quais tenho todo o meu prazer.\n⁴ Muitas serão as dores\n  dos que trocam o Senhor\n  por outros deuses;\n  não oferecerei as suas libações\n  de sangue,\n  e os meus lábios não pronunciarão\n  os nomes deles.\n⁵ O Senhor é a porção\n  da minha herança\n  e o meu cálice;\n  tu sustentas a minha sorte.\n⁶ As minhas divisas caíram\n  em lugares agradáveis;\n  é linda a minha herança.\n⁷ Bendigo o Senhor,\n  que me aconselha;\n  pois até durante a noite\n  o meu coração me ensina.\n⁸ Tenho o Senhor sempre\n  diante de mim;\n  estando ele à minha direita,\n  não serei abalado.\n⁹ Por isso o meu coração se alegra\n  e o meu espírito exulta;\n  até o meu corpo repousará seguro.\n¹⁰ Pois não deixarás\n  a minha alma na morte,\n  nem permitirás que o teu Santo\n  veja corrupção.\n¹¹ Tu me farás ver\n  os caminhos da vida;\n  na tua presença\n  há plenitude de alegria,\n  à tua direita,\n  há delícias perpetuamente. \n\nSalmos 16:1-11","","","","" };
-    private static String[] Imagens = { "https://images.pexels.com/photos/12232534/pexels-photo-12232534.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" };
+    private static String[] Imagens = { "~/wwwroot/image/pexels-dan-hamill-144328-436793.jpg" };
+    */
     
 }
-</body>
-</html>*@
+
